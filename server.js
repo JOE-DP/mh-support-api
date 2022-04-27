@@ -9,7 +9,7 @@ app.use(cors())
 console.log("server doc init'd")
 
 app.get('/', (req, res) => {
-    res.sendFile('https://joe-dp.github.io/mh-support-api/')
+    res.sendFile(__dirname + 'index.html')
 })
 
 
