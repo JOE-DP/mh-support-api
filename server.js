@@ -9,7 +9,7 @@ app.use(cors())
 console.log("server doc init'd")
 
 app.get('/', (req, res) => {
-    res.send("Mental Health Support API, to search by mental health concerns use: https://mh-support-api.herokuapp.com/api/support/byspec/[mental health concern paramater]  - current options are: suicide, bereavement, bipolar, depression, addiction, OCD and panic")
+    res.send("Disclaimer: this API has been developed as part of a learning experience and it is not monitored or updated, therefore I do not take any responsibility for any negative outcomes of using the services, and if someone needs mental health support, it is always best to seek professional medical support. I also have no connection to any of the organisations used in this API. For information and instructions to use this API visit: https://joe-dp.github.io/mh-support-api/")
 })
 
 
@@ -17,6 +17,12 @@ app.get('/api/support/byspec/:spec', (req, res) => {
     const spec = req.params.spec.toLowerCase()
 
     res.json(supportObject.filter(item => item.support.includes(spec)))
+})
+
+app.get('/api/support/byname/:name', (req, res) => {
+    const name = req.params.name.toLowerCase()
+
+    res.json(supportObject.filter(item => item.name.split(" ").join("").toLowerCase() == name.split(" ").join("").toLowerCase()))
 })
 
 app.listen(process.env.PORT || PORT, () => {
