@@ -1,10 +1,46 @@
+*{
+    font-family: 'Archivo Narrow', sans-serif;
+    
+}
+
+li, a{
+    display: inline;
+    padding-left: 2%;
+    font-size: 2rem;
+    color: rgb(245, 232, 232);
+
+
+}
 .header{
-    height: 20%;
+    height: 9rem;
     width: 100%;
-    position: fixed;
-    background-color: grey;
+    background-image: linear-gradient(315deg, #bdd4e7 0%, #8693ab 74%);
+    float: left;
+    color: rgb(245, 232, 232);
+    font-weight: bold;
+  
+}
+body{
+    height: 100%;
+    background:  #d0daea;
+}
+
+h1{
+    padding-left: 2%;
+    font-weight: bold;
+    font-size: 3rem;
 }
 .main-information{
-    padding-top: 10%;
-    font-size: 100%;
+    font-size: 2rem;
+    padding-left: 2%;
+    height: 200%;
 }
+span{
+    font-weight: bold;
+}
+
+@media only screen and (max-width: 600px) {
+    html {
+        font-size:40.5%;
+    }
+    }
