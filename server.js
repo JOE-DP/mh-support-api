@@ -9,7 +9,7 @@ app.use(cors())
 console.log("server doc init'd")
 
 app.get('/', (req, res) => {
-    res.sendFile(__dirname + 'index.html')
+    res.send("Mental Health Support API, to search by mental health concerns use: https://mh-support-api.herokuapp.com/api/support/byspec/[mental health concern paramater]  - current options are: suicide, bereavement, bipolar, depression, addiction, OCD and panic")
 })
 
 
