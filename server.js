@@ -31,29 +31,29 @@ app.listen(process.env.PORT || PORT, () => {
 
 
 const supportObject = [{
-    name: 'Samaritans', 
+    name: 'Suicide charity', 
     support: ['suicide', 'addiction', 'depression'],
     location: 'UK',
-    telephone: '116123',
-    website: 'https://www.samaritans.org/'
-}, {  name: 'Bipolar UK', 
+    telephone: 'phone number',
+    website: 'link to a website'
+}, {  name: 'Bipolar charity', 
     support: ['bipolar', 'depression'],
     location: 'UK',
     telephone: 'Unknown', 
-    website: 'https://www.bipolaruk.org/crisis-support'
-}, {  name: 'No Panic', 
+    website: 'link to a website'
+}, {  name: 'Panic/ODC charity', 
     support: ['panic', 'OCD'],
     location: 'UK',
-    telephone: '03007729844', 
-    website: 'https://nopanic.org.uk/'
-}, {  name: 'Support After Suicide Partnership', 
+    telephone: 'phone number', 
+    website: 'link to a website'
+}, {  name: 'Bereavement charity', 
     support: ['suicide', 'bereavement'],
     location: 'unknown',
     telephone: 'unknown', 
-    website: 'https://supportaftersuicide.org.uk/'
-}, {  name: 'mind', 
+    website: 'link to a website'
+}, {  name: 'Mental health charity', 
     support: ['suicide', 'bereavement', 'bipolar', 'depression', 'addiction'],
     location: 'unknown',
-    telephone: '03001233393', 
-    website: 'https://www.mind.org.uk/'
+    telephone: 'phone number',
+    website: 'link to a website'
 }]
