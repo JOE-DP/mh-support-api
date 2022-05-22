@@ -1,7 +1,7 @@
 # Mental Health API
 This is an example of an API which allows a user to search the database for mental health support services, based upon queries such as mental health condition or the name of the support organisation. The database is generically populated as the page is an example of a potential API rather than a functional service, therefore I would not wish those who needed support to use ths service. 
 
-**Demo: https://joe-dp.github.io/tictactoe/**
+**Demo: https://joe-dp.github.io/mh-support-api/**
 
 ## How It's Made:
 
